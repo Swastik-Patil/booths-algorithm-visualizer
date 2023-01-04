@@ -35,7 +35,7 @@ function multiply() {
   var factor1 = parseInt($('input[name="factor1"]').val());
   var factor2 = parseInt($('input[name="factor2"]').val());
 
-  if (factor1 !== null || factor2 !== null) {
+  if (isNan(factor1) || isNaN(factor2)) {
     alert("Please Enter the Numbers");
     return;
   }
